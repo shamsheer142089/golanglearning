@@ -17,5 +17,4 @@ func main() {
 	//*pt1 is a pointer to pt1 value ,*pt2 is pointer to pt2 value ,*pt3 is pointer to pt3 value
 	//fmt.Println(pt1 + pt2 + pt3) - this is invalid no operations supported on pointer itself..Operations are supported on pointer value which is *pt
 
-
 }

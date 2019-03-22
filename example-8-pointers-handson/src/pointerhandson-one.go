@@ -21,7 +21,16 @@ func main() {
 	//If we really want to store a value to *pt4 , we need refer the pointer of the pointer , that is we need to add one more * before pointer
 	//eg **pt4=400
 	//**pt4=400
-	fmt.Println(*pt4) //it prints the address of pt
+	fmt.Println(*pt4)  //it prints the address of pt
 	fmt.Println(**pt4) //it prints the value at pt
+
+	//Let us store address of pt4 in another pointer
+	pt5:=&pt4
+	fmt.Println("Address stored at pt4(which is of pt in this example) is the value in pt5 -->",pt4,*pt5)
+	fmt.Println("Address stored at pt(which is of value variable in this example) is the value in **pt5 -->",pt,**pt5)
+	fmt.Println("Value stored at value variable is the value in ***pt5 --> ",value,***pt5)
+
+
+
 
 }
