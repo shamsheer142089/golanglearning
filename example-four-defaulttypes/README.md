@@ -2,6 +2,8 @@
 golangpractices
 
 
+ **Example-Four** Custom Types
+
 
 
 
