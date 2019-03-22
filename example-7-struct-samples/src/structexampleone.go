@@ -64,11 +64,9 @@ func main() {
 	shamsheer.printPerson()
 
 	//pointers
-	structPointer:=&shamsheer
+	structPointer := &shamsheer
 	fmt.Println(structPointer)
 	structPointer.updatePersonFirstName("S Md Shamsheer")
-
-
 
 }
 
@@ -78,9 +76,7 @@ func (per person) printPerson() {
 
 }
 
-func(per *person) updatePersonFirstName(firstName string){
-	(*per).firstName=firstName
-	 fmt.Println(&per)
-
-
+func (per *person) updatePersonFirstName(firstName string) {
+	(*per).firstName = firstName
+	fmt.Println(&per)
 }
