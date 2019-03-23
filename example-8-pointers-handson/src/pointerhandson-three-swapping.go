@@ -10,7 +10,7 @@ func main() {
 	swappedOne,swappedTwo:=swapGeneralwayWithPointers(&first, &second)
 	fmt.Println("Numbers Swapped Using Pointers --> ",swappedOne," ",swappedTwo)
 	//another easy way to swap in GO . go by default uses registry to store temporary values.
-	//so we dont need to use temporary variable 
+	//so we dont need to use temporary variable
 	fmt.Println("Numbers before swapping in go way",first,second)
 	second,first=first,second
 	fmt.Println("Numbers after swapping in go way",first,second)
